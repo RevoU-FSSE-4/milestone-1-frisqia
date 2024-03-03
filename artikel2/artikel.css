@@ -1,0 +1,134 @@
+:root {
+  --primary: rgb(54, 54, 255);
+  --second: rgb(60, 138, 246);
+  ---three: rgb(125, 255, 125);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-content {
+  margin-top: 10px;
+  display: grid;
+  color: var(--primary);
+}
+
+.logo-content h1 span {
+  color: var(--second);
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+}
+
+menu a {
+  text-decoration: none;
+  color: grey;
+}
+
+menu a:hover {
+  color: var(--second);
+}
+
+.bx-search-alt-2 {
+  font-size: 20px;
+}
+.bx-search-alt-2:hover {
+  color: var(--second);
+}
+.checkbox {
+  display: none;
+}
+header #bar-menu {
+  background: white;
+  display: none;
+}
+header .bx-menu {
+  display: none;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+.artikel p {
+  font-family: "poppins", sans-serif;
+  padding-top: 50px;
+  width: 700px;
+}
+
+@media screen and (max-width: 900px) {
+  .checkbox {
+    display: block;
+  }
+  .checkbox .bx-menu {
+    margin: 10px;
+    display: block;
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0.5px 1.5px;
+    cursor: pointer;
+  }
+  header menu {
+    display: block;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 0);
+  }
+
+  .checkbox #bar-menu:checked ~ header menu {
+    clip-path: polygon(0, 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .misi {
+    display: grid;
+    margin: 10px;
+  }
+  .visi {
+    width: 400px;
+    padding: 0;
+  }
+
+  .visi1 {
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .visi2 {
+    border-left: none;
+    border-top: 1px solid white;
+    padding: 10px;
+  }
+
+  main {
+    display: grid;
+  }
+  .product-content {
+    width: 500px;
+  }
+
+  .middle {
+    top: 50vh;
+  }
+}
