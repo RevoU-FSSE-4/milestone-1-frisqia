@@ -146,16 +146,138 @@ header .bx-menu {
   padding-top: 20px;
 }
 
-.slide-product {
+main {
+  margin: 0;
+  padding: 0;
   display: flex;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25%);
+  margin: 10px 9%;
+  padding-top: 50px;
 }
-.product h1 {
+
+.product-content {
+  margin: 10px;
+  width: 300px;
+}
+.product-content h1 {
   text-align: center;
+  color: var(--primary);
+  font-size: 50px;
+  text-shadow: 3px 3px 3px #333;
+}
+.product-content p {
+  background: var(--second);
+  color: #fff;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100 300 0 600;
+  font-style: italic;
+  font-size: large;
+  border-radius: 0 25px 0 25px;
+}
+.slideshow {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.middle {
+  position: relative;
+  top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.read {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 100px;
+  align-items: center;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 25px 25px 25px;
+  cursor: pointer;
+}
+
+.pro {
+  width: 20px;
+  height: 10px;
+  border: 2px solid var(--second);
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.pro:hover {
+  background: var(--primary);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+#r6:checked ~ .s1 {
+  margin-left: -100%;
+}
+#r7:checked ~ .s1 {
+  margin-left: -120%;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.artikel {
+  flex-direction: column;
+  grid-template-columns: repeat(2 1fr);
+}
+
+picture img {
+  width: 300px;
+  height: 200px;
 }
 
 @media screen and (max-width: 900px) {
@@ -198,5 +320,16 @@ header .bx-menu {
     border-left: none;
     border-top: 1px solid white;
     padding: 10px;
+  }
+
+  main {
+    display: grid;
+  }
+  .product-content {
+    width: 500px;
+  }
+
+  .middle {
+    top: 50vh;
   }
 }
