@@ -272,7 +272,7 @@ picture {
 }
 .artikel {
   flex-direction: column;
-  grid-template-columns: repeat(2 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 picture img {
@@ -280,6 +280,14 @@ picture img {
   height: 200px;
 }
 
+.artikel1 img {
+  background-color: blue;
+  opacity: 0.8;
+}
+.artikel p {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 900px) {
   .checkbox {
     display: block;
