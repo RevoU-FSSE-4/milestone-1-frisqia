@@ -224,35 +224,60 @@
 
     <article>
       <picture>
-        <div class="artikel">
-          <a href="artikel text/index.html"
-            ><img
-              src="company-imag/content/covid.jpg"
-              alt="covid"
-              class="satu"
-            />
-          </a>
-          <p>Covid-19! Perlu Tau</p>
+        <div class="box">
+          <div class="artikel">
+            <a href="artikel text/index.html"
+              ><img
+                src="company-imag/content/covid.jpg"
+                alt="covid"
+                class="satu"
+              />
+            </a>
+            <figcaption>Covid-19! Perlu Tau</figcaption>
+            <p>
+              Masa Pandemi belum usai, bahkan saat ini negara kita sedang
+              diperhadapkan dengan badai kedua akibat meningkatnya kasus
+              COVID-19.
+            </p>
+          </div>
         </div>
-        <div class="artikel">
-          <a href="artikel3/index.html"
-            ><img
-              src="company-imag/content/sariawan.jpg"
-              alt="sariawan"
-              class="dua"
-            />
-          </a>
-          <p>Ketika si Kecil Sariawan</p>
+        <div class="box">
+          <div class="artikel">
+            <a href="artikel3/index.html"
+              ><img
+                src="company-imag/content/sariawan.jpg"
+                alt="sariawan"
+                class="dua"
+              />
+            </a>
+            <figcaption>Ketika si Kecil Sariawan</figcaption>
+            <p>
+              Bunda pintar aku mau berbagi cerita nih tentang bagaimana rasanya
+              ketika anak sariawan, demam dan gak mau makan. Waktu anaku umur 1
+              th pernah aku alami tiba-tiba dia gak mau minum susu, gak mau
+              makan, dan badanya panas
+            </p>
+          </div>
         </div>
-        <div class="artikel">
-          <a href="artikel2/index.html"
-            ><img
-              src="company-imag/content/Drama.jpg"
-              alt="Drama"
-              class="tiga"
-            />
-          </a>
-          <p>Adegan drama berseri yang tak kunjung selesai</p>
+        <div class="box">
+          <div class="artikel">
+            <a href="artikel2/index.html"
+              ><img
+                src="company-imag/content/Drama.jpg"
+                alt="Drama"
+                class="tiga"
+              />
+            </a>
+            <figcaption>
+              Adegan drama berseri yang tak kunjung selesai
+            </figcaption>
+            <p>
+              bekerja di perusahaan yang memproduksi obat adalah kemudahan akses
+              untuk berobat! Kami karyawan tidak perlu jauh – jauh pergi ke
+              apotek karena di PT Metiska Farma menyediakan obat yang beragam
+              dengan kualitas yang mumpuni menurut saya.
+            </p>
+          </div>
         </div>
       </picture>
       <div class="abot">
@@ -313,21 +338,27 @@
     </aside>
     <form action="">
       <div class="form">
-        <div class=""></div>
-        <h1>Contact Us</h1>
-        <input type="text" id="name" name="name" placeholder="Nama Anda" />
-        <input type="email" id="email" name="Email" placeholder="Email Anda" />
-        <input
-          type="tel"
-          id="tel"
-          name="tel"
-          placeholder="Nomor Telpon Anda"
-          maxlength="13"
-        />
-        <p>0 of 13 max characters.</p>
+        <div class="data">
+          <h1>Contact Us</h1>
+          <input type="text" id="name" name="name" placeholder="Nama Anda" />
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Email Anda"
+          />
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Nomor Telpon Anda"
+            maxlength="13"
+          />
+          <p>0 of 13 max characters.</p>
+        </div>
         <div class="topik">
-          <label for="info" aria-required=""
-            >Pilih topik pesan Anda dibawah ini:</label
+          <label for="info"
+            >Pilih topik pesan Anda dibawah ini: <span>*</span></label
           >
           <select name="Topik" id="Topik" required>
             <option value="informasi">Informasi Produk</option>
@@ -343,7 +374,9 @@
         <label for="w3review">Ketikan Pesan Anda</label>
 
         <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
-        <input type="submit" value="Kirim Pesan" width="50px" />
+        <div class="send">
+          <input type="submit" value="Kirim Pesan" />
+        </div>
       </div>
     </form>
     <footer>
