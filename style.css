@@ -357,6 +357,8 @@ aside {
   font-size: 20px;
   color: #fff;
   font-family: "poppins", sans-serif;
+  animation-name: kiri;
+  animation-duration: 5s;
 }
 .text2 {
   grid-column: 3/4;
@@ -366,6 +368,8 @@ aside {
   font-size: 20px;
   color: #fff;
   font-family: "poppins", sans-serif;
+  animation-name: kanan;
+  animation-duration: 8s;
 }
 .text3 {
   grid-column: 1/3;
@@ -375,6 +379,8 @@ aside {
   font-size: 20px;
   color: #fff;
   font-family: "poppins", sans-serif;
+  animation-name: kiri;
+  animation-duration: 8s;
 }
 
 form {
@@ -566,16 +572,19 @@ footer {
     grid-column: 1/3;
     grid-row: 1/3;
     width: 100%;
+    animation: none;
   }
   .text2 {
     font-size: 20px;
     grid-column: 2/4;
     grid-row: 1/5;
+    animation: none;
   }
   .text3 {
     font-size: 20px;
     grid-column: 1/3;
     grid-row: 2/5;
+    animation: none;
   }
   .form {
     border: 1px solid #333;
@@ -699,5 +708,27 @@ footer {
     font-size: 10px;
     grid-column: 1/3;
     grid-row: 3/5;
+  }
+}
+
+@keyframes kiri {
+  form {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+  }
+}
+
+@keyframes kanan {
+  form {
+    -moz-transform: translateX(-50%);
+    -webkit-animation: translateX(-50%);
+  }
+  to {
+    -moz-transform: translateX(-75%);
+    -webkit-animation: translateX(-75%);
   }
 }
