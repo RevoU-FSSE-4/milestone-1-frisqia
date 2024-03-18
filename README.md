@@ -43,3 +43,21 @@ git push origin main (your branch)
 ```
 
 ## Deployment 🖥️
+
+the project has been successfully deployed using Netlify. You can access my project by following this link: https://cattyhome.site/
+
+### How To Set Up ⚙️
+
+1. connect your account netlify
+
+![login netlify](readme/2_20240318_190208_0001.png)
+
+2. create domain at niagahoster
+
+![niagahoster](readme/1_20240318_190208_0000.png)
+
+3. connect your domain request to your website at netlify
+
+![connect domain](<readme/1.Log in with github_20240318_185324_0000.png>)
+
+congratulation your web is done !
