@@ -423,6 +423,10 @@ form {
 .topik label span {
   color: red;
 }
+
+textarea {
+}
+
 footer {
   padding: 20px;
   display: flex;
@@ -598,7 +602,7 @@ footer {
     align-items: center;
   }
 
-  form input {
+  .data input {
     background: rgb(253, 250, 250);
     height: 20px;
     width: 400px;
@@ -667,6 +671,24 @@ footer {
 
   picture {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .form {
+    width: 200px;
+  }
+
+  .data input {
+    height: 20px;
+    width: 200px;
+  }
+
+  .send input {
+    font-size: 10px;
+    width: 50px;
+  }
+
+  #Topik {
+    width: 200px;
   }
 }
 
