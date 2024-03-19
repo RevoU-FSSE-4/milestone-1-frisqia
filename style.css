@@ -190,6 +190,7 @@ main {
   border-radius: 0 25px 0 25px;
 }
 .slideshow {
+  padding-top: 40px;
   width: 500px;
   height: 500px;
   overflow: hidden;
@@ -424,12 +425,9 @@ form {
   color: red;
 }
 
-textarea {
-}
-
 footer {
   padding: 20px;
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   background: var(--primary);
