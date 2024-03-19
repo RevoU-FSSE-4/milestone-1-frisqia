@@ -196,7 +196,7 @@ main {
 }
 .middle {
   position: relative;
-  padding-top: 30vh;
+  top: 30vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
