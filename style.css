@@ -190,7 +190,6 @@ main {
   border-radius: 0 25px 0 25px;
 }
 .slideshow {
-  padding-top: 40px;
   width: 500px;
   height: 500px;
   overflow: hidden;
@@ -250,7 +249,6 @@ input[name="r"] {
 }
 
 .slide {
-  padding-top: 50vh;
   width: 20%;
   transition: 0.6s;
 }
