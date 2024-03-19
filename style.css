@@ -429,8 +429,8 @@ textarea {
 
 footer {
   padding: 20px;
+  height: 100vh;
   display: flex;
-  position: sticky;
   justify-content: center;
   background: var(--primary);
 }
