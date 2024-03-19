@@ -196,7 +196,7 @@ main {
 }
 .middle {
   position: relative;
-  top: 30vh;
+  top: 100vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -429,7 +429,7 @@ textarea {
 
 footer {
   padding: 20px;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   background: var(--primary);
@@ -446,6 +446,7 @@ footer {
   padding: 5px;
   font-size: 10px;
   width: 17px;
+  height: 17px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
