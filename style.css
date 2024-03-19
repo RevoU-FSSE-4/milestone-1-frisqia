@@ -243,6 +243,7 @@ input[name="r"] {
 }
 
 .slides {
+  top: 50px;
   width: 500%;
   height: 100%;
   display: flex;
