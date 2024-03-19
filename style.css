@@ -430,7 +430,7 @@ textarea {
 footer {
   padding: 20px;
   display: flex;
-  position: fixed;
+  position: sticky;
   justify-content: center;
   background: var(--primary);
 }
