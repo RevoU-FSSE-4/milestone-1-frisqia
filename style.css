@@ -692,6 +692,35 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
+  .navbar {
+    font-size: 10px;
+  }
+  .banner {
+    width: 100%;
+  }
+  .ABOUT {
+    justify-content: center;
+  }
+  .misi {
+    display: grid;
+    margin: 10px;
+  }
+  .visi {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .visi1 {
+    max-width: 70%;
+  }
+  .visi2 {
+    max-width: 70%;
+  }
+
+  .visi3 {
+    max-width: 100%;
+  }
+
   .certification {
     display: grid;
   }
@@ -702,7 +731,10 @@ footer {
   .slideshow {
     width: 300px;
   }
-
+  aside {
+    width: 115vw;
+    height: 70vh;
+  }
   .text {
     padding: 2%;
     display: grid;
@@ -729,6 +761,9 @@ footer {
     font-size: 10px;
     grid-column: 1/3;
     grid-row: 3/5;
+  }
+  footer {
+    width: 100%;
   }
 }
 
